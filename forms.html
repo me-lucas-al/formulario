@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="shortcut icon" href="imagex.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+        
+            <div class = "titles">
+                <h1 class = "titulo">Cadastro DEVs</h1>
+                <p class = "subtitulo">Complete suas informações</p>
+                <br>
+            </div>
+        <fieldset class = "grupo">
+            <div class = "campo">
+                <label for = "nome"><strong>Nome</strong></label>
+                <input type = "text" name = "nome" class = "nome" required>
+            </div>
+            <div class = "campo sobrenome">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type = "text" name = "sobrenome" class = "sobrenome" required>
+            </div>
+        </fieldset>
+
+            <div class = "campo">
+                <label for = "email"><strong>E-mail</strong></label>
+                <input type = "email" name = "email" class = "email" required>
+            </div>
+
+
+            <div class = "radio">
+                <label><strong><br>De qual lado da aplicação você desenvolve?</strong></label>
+                <label><br>
+                    <input type="radio" name="devFront" value ="front-end">Front-End
+                </label>
+                <label><br>
+                    <input type="radio" name="devBack" value ="back-end">Back-End
+                </label>
+                <label><br>
+                    <input type="radio" name="devFullstack" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <div>
+                <br>
+                <labeL for = "senioridade"><strong>Senioridade</strong></labeL><br>
+                <select class = "senioridade">
+                    <option selected disabled>Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        
+        <fieldset class = "grupo" >
+            <div class = "check">
+                <br>
+                <label><strong>Selecione as tecnologias que utiliza</strong></label><br><br>
+                <input type = "checkbox" class = "tecnologia1" name = "tecnologia1" value = "HTML">
+                <label for = "tecnologia1">HTML</label><br>
+                <input type = "checkbox" class = "tecnologia2" name = "tecnologia2" value = "CSS">
+                <label for = "tecnologia2">CSS</label><br>
+                <input type = "checkbox" class = "tecnologia3" name = "tecnologia3" value = "JavaScript">
+                <label for = "tecnologia3">JavaScript</label><br>
+                <input type = "checkbox" class = "tecnologia4" name = "tecnologia4" value = "PHP">
+                <label for = "tecnologia4">PHP</label><br>
+                <input type = "checkbox" class = "tecnologia5" name = "tecnologia5" value = "C#">
+                <label for = "tecnologia5">C#</label><br>
+                <input type = "checkbox" class = "tecnologia6" name = "tecnologia6" value = "Python">
+                <label for = "tecnologia6">Python</label><br>
+                <input type = "checkbox" class = "tecnologia7" name = "tecnologia7" value = "Java">
+                <label for = "tecnologia7">Java</label><br>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label><strong>Conte um pouco da sua experiência</strong></label><br>
+            <textarea rows="6" class = "experiencia" name = experiencia></textarea>
+        </div>
+        
+        <button type = "submit">Concluído</button> 
+
+        </form>
+    </body>
+</html>
